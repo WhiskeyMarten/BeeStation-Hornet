@@ -194,7 +194,7 @@
 
 /obj/effect/mapping_helpers/airlock/access/any/science/general/get_access()
 	var/list/access_list = ..()
-	access_list += ACCESS_TOX
+	access_list += ACCESS_RESEARCH
 	return access_list
 
 /obj/effect/mapping_helpers/airlock/access/any/science/research/get_access()
@@ -204,7 +204,7 @@
 
 /obj/effect/mapping_helpers/airlock/access/any/science/ordnance/get_access()
 	var/list/access_list = ..()
-	access_list += ACCESS_TOX_STORAGE
+	access_list += ACCESS_TOX
 	return access_list
 
 /obj/effect/mapping_helpers/airlock/access/any/science/ordnance_storage/get_access()
@@ -232,9 +232,19 @@
 	access_list += ACCESS_RD
 	return access_list
 
+/obj/effect/mapping_helpers/airlock/access/any/science/rd_server/get_access()
+	var/list/access_list = ..()
+	access_list += ACCESS_RD_SERVER
+	return access_list
+
 /obj/effect/mapping_helpers/airlock/access/any/science/maintenance/get_access()
 	var/list/access_list = ..()
 	access_list += list(ACCESS_RESEARCH, ACCESS_MAINT_TUNNELS)
+	return access_list
+
+/obj/effect/mapping_helpers/airlock/access/any/science/exploration/get_access()
+	var/list/access_list = ..()
+	access_list += ACCESS_EXPLORATION
 	return access_list
 
 // -------------------- Security access helpers
@@ -691,6 +701,16 @@
 /obj/effect/mapping_helpers/airlock/access/all/science/rd/get_access()
 	var/list/access_list = ..()
 	access_list += ACCESS_RD
+	return access_list
+
+/obj/effect/mapping_helpers/airlock/access/all/science/rd_server/get_access()
+	var/list/access_list = ..()
+	access_list += ACCESS_RD_SERVER
+	return access_list
+
+/obj/effect/mapping_helpers/airlock/access/all/science/exploration/get_access()
+	var/list/access_list = ..()
+	access_list += ACCESS_EXPLORATION
 	return access_list
 
 // -------------------- Security access helpers
