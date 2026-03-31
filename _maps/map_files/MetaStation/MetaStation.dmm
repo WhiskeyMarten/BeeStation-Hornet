@@ -18035,9 +18035,7 @@
 /area/chapel/main)
 "doE" = (
 /obj/effect/turf_decal/tile/neutral,
-/obj/structure/chair/stool/directional/south{
-	dir = 1
-	},
+/obj/structure/chair/stool/directional/south,
 /turf/open/floor/iron,
 /area/medical/break_room)
 "doQ" = (
@@ -20565,6 +20563,11 @@
 /turf/open/floor/wood,
 /area/security/prison)
 "ejd" = (
+/obj/item/storage/box/syringes,
+/obj/item/storage/box/beakers{
+	pixel_x = 2;
+	pixel_y = 2
+	},
 /obj/machinery/power/apc/auto_name/directional/north,
 /obj/effect/turf_decal/bot_white,
 /obj/structure/cable/yellow{
@@ -20574,10 +20577,7 @@
 	dir = 8
 	},
 /obj/effect/turf_decal/tile/green/opposingcorners,
-/obj/machinery/chem_master/condimaster{
-	desc = "Used to separate out liquids - useful for purifying botanical extracts. Also dispenses condiments.";
-	name = "BrewMaster 2199"
-	},
+/obj/structure/table,
 /turf/open/floor/iron,
 /area/hydroponics)
 "ejo" = (
@@ -23961,13 +23961,8 @@
 /obj/structure/railing,
 /obj/item/storage/toolbox/mechanical{
 	pixel_x = -4;
-	pixel_y = 10
+	pixel_y = 4
 	},
-/obj/item/storage/box/beakers{
-	pixel_x = 2;
-	pixel_y = 2
-	},
-/obj/item/storage/box/syringes,
 /turf/open/floor/iron,
 /area/hydroponics/garden/monastery)
 "fuq" = (
@@ -34149,16 +34144,13 @@
 /turf/open/floor/iron/solarpanel/airless,
 /area/solar/starboard/fore)
 "iUh" = (
+/obj/machinery/door/window/westright{
+	req_access_txt = "12;22;25;26;28;35;37;38;46";
+	name = "Service Access"
+	},
 /obj/effect/turf_decal/trimline/green/line,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/delivery,
-/obj/structure/window/reinforced/spawner/directional/north,
-/obj/structure/window/reinforced/spawner/directional/south,
-/obj/machinery/door/window/westright{
-	name = "Service Access";
-	req_one_access_txt = "12;22;25;26;28;35;37;38;46";
-	dir = 4
-	},
 /turf/open/floor/iron,
 /area/hallway/secondary/service)
 "iUk" = (
@@ -43303,6 +43295,7 @@
 	pixel_y = -2
 	},
 /obj/machinery/airalarm/directional/west,
+/obj/structure/window/spawner/directional/south,
 /turf/open/floor/iron,
 /area/hallway/secondary/service)
 "mky" = (
@@ -49071,9 +49064,7 @@
 /obj/effect/turf_decal/tile/blue/opposingcorners{
 	dir = 1
 	},
-/obj/structure/chair/stool/directional/west{
-	dir = 4
-	},
+/obj/structure/chair/stool/directional/west,
 /obj/structure/disposalpipe/segment{
 	dir = 1
 	},
@@ -75346,9 +75337,7 @@
 /obj/effect/turf_decal/tile/blue/opposingcorners{
 	dir = 1
 	},
-/obj/structure/chair/stool/directional/west{
-	dir = 4
-	},
+/obj/structure/chair/stool/directional/west,
 /obj/structure/disposalpipe/segment{
 	dir = 1
 	},
@@ -77321,9 +77310,7 @@
 /turf/open/floor/iron/white,
 /area/medical/chemistry)
 "xZC" = (
-/obj/structure/chair/stool/directional/south{
-	dir = 1
-	},
+/obj/structure/chair/stool/directional/south,
 /obj/effect/turf_decal/tile/neutral,
 /obj/item/radio/intercom{
 	pixel_x = 3;
